@@ -14,7 +14,7 @@ Vulnerability Type: Stack-based Buffer Overflow
 
 The vulnerable code path processes HTTP requests containing the pppoeServerUserInfo parameter. When pppoeServerUserInfo is specified with malformed or excessive data, the buffer overflow occurs during the processing of PPPoE user information in formAddPppUser.
 
-![image-20260429162334375](C:\Users\LCY\AppData\Roaming\Typora\typora-user-images\image-20260429162334375.png)
+![Description](C:\Users\LCY\Desktop\Tenda\W20E\formAddPppUser\Description.png)
 
 ## Poc
 
@@ -42,4 +42,4 @@ def trigger_overflow():
 trigger_overflow()
 ```
 
-![image-20260429162615580](C:\Users\LCY\AppData\Roaming\Typora\typora-user-images\image-20260429162615580.png)
+![poc](C:\Users\LCY\Desktop\Tenda\W20E\formAddPppUser\Poc.png)
